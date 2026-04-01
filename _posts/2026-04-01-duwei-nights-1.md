@@ -1,6 +1,6 @@
 ---
 title: "DUWEI NIGHTS #1"
-date: 2026-04-01 23:40:00 +0800
+date: 2026-04-01 12:00:00 +0800
 dek: "It started without a clear reason."
 ---
 
