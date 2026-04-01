@@ -133,6 +133,7 @@ select {
 .site-header,
 .page-header,
 .post,
+.page-note,
 .not-found,
 .page-interior .site-footer {
   max-width: var(--content-width);
@@ -447,10 +448,59 @@ select {
   background: var(--page-line);
 }
 
+.page-note {
+  width: min(100%, var(--reading-width));
+}
+
+.page-note__header {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.1rem;
+}
+
+.page-note__header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0.03em;
+  text-wrap: balance;
+}
+
+.page-note__dek {
+  max-width: 22rem;
+  color: var(--page-muted);
+}
+
+.page-note__content {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 30rem;
+}
+
+.page-note__content p {
+  color: var(--page-fg);
+}
+
 .site-footer {
   color: var(--page-soft);
   font-size: 0.88rem;
   letter-spacing: 0.03em;
+}
+
+.site-footer__link {
+  text-decoration: none;
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: rgba(237, 229, 216, 0.36);
+}
+
+.site-footer__separator,
+.site-footer__subtitle {
+  color: var(--page-soft);
 }
 
 .page-home .site-footer {

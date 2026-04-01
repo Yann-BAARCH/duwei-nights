@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="page-note">
+  <header class="page-note__header">
+    <p class="post-return">
+      <a class="post-return__link" href="{{ '/' | relative_url }}">Back to Home</a>
+    </p>
+    {% if page.eyebrow %}
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.dek %}
+      <p class="page-note__dek">{{ page.dek }}</p>
+    {% endif %}
+  </header>
+
+  <div class="page-note__content">
+    {{ content }}
+  </div>
+</article>
