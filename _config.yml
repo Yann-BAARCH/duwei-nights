@@ -3,8 +3,8 @@ subtitle: "毒味夜"
 description: "A quiet editorial archive for late listening, fragments, and notes."
 lang: en
 timezone: Asia/Shanghai
-url: "https://yann-baarch.github.io"
-baseurl: "/duwei-nights"
+url: "https://duwei-nights.eu.org"
+baseurl: ""
 permalink: /posts/:slug/
 markdown: kramdown
 plugins: []
