@@ -1,6 +1,6 @@
 ---
 title: "le villejuif underground"
-date: 2026-04-02 12:00:00 +0800
+date: 2026-04-01 12:00:00 +0800
 dek: "On “On The Seine,” Nathan Roche, and the kind of drift that stays."
 ---
 
