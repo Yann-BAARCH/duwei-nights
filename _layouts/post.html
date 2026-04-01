@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <p class="post-return">
+      <a class="post-return__link" href="{{ '/' | relative_url }}">Back to Home</a>
+    </p>
+    {% include post-meta.html post=page %}
+    <h1>{{ page.title }}</h1>
+    {% if page.dek %}
+      <p class="post-dek">{{ page.dek }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

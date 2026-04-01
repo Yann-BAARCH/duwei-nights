@@ -1,0 +1,22 @@
+{% assign posts = include.posts %}
+{% assign limit = include.limit %}
+
+{% if posts and posts.size > 0 %}
+  <ol class="post-list">
+    {% for post in posts limit: limit %}
+      <li class="post-list__item">
+        <a class="post-list__link" href="{{ post.url | relative_url }}">
+          <div class="post-list__header">
+            <h3>{{ post.title }}</h3>
+            {% include post-meta.html post=post %}
+          </div>
+          {% if post.dek %}
+            <p class="post-list__dek">{{ post.dek }}</p>
+          {% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
+{% else %}
+  <p class="empty-state">No entries have been published yet.</p>
+{% endif %}

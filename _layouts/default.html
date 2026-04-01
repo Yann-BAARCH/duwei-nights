@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  {% include head.html %}
+  <body class="{% if page.url == '/' %}page-home{% else %}page-interior{% endif %} layout-{{ page.layout | default: 'default' }}">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="site-shell">
+      {% unless page.url == '/' %}
+        {% include site-header.html %}
+      {% endunless %}
+      <main id="content" class="site-main">
+        {{ content }}
+      </main>
+      {% include site-footer.html %}
+    </div>
+  </body>
+</html>

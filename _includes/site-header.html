@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="site-branding">
+    <a class="site-branding__link" href="{{ '/' | relative_url }}">
+      <span class="site-branding__title">{{ site.title }}</span>
+      <span class="site-branding__subtitle" lang="zh-Hans">{{ site.subtitle }}</span>
+    </a>
+  </div>
+
+  {% unless page.layout == 'post' %}
+    <nav class="site-nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/posts/' | relative_url }}">Archive</a>
+    </nav>
+  {% endunless %}
+</header>

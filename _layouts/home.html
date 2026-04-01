@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section class="home-composition">
+  <section class="home-identity" aria-labelledby="site-title">
+    <h1 id="site-title" class="site-lockup">
+      <span class="site-lockup__latin">{{ site.title }}</span>
+      <span class="site-lockup__han" lang="zh-Hans">{{ site.subtitle }}</span>
+    </h1>
+    {{ content }}
+  </section>
+
+  <section class="home-entries" aria-labelledby="home-entries-title">
+    <div class="home-entries__header">
+      <h2 id="home-entries-title" class="home-section-label">Entries</h2>
+      <a class="home-entries__archive" href="{{ '/posts/' | relative_url }}">Archive</a>
+    </div>
+    <ol class="home-entry-list">
+      {% for post in site.posts %}
+        <li class="home-entry-list__item">
+          <a class="home-entry-list__link" href="{{ post.url | relative_url }}">
+            <time class="home-entry-list__date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%m.%d.%Y" }}
+            </time>
+            <span class="home-entry-list__separator" aria-hidden="true">—</span>
+            <span class="home-entry-list__title">{{ post.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+</section>
