@@ -3,7 +3,7 @@ subtitle: "毒味夜"
 description: "A quiet editorial archive for late listening, fragments, and notes."
 lang: en
 timezone: Asia/Shanghai
-url: "https://duwei-nights.pages.dev"
+url: ""
 baseurl: ""
 permalink: /posts/:slug/
 markdown: kramdown

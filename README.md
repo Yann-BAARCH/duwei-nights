@@ -1,10 +1,10 @@
 # DUWEI NIGHTS
 
-DUWEI NIGHTS / 毒味夜 is a minimal Jekyll site for GitHub Pages.
+DUWEI NIGHTS / 毒味夜 is a minimal Jekyll site prepared for Netlify deployment.
 
 ## Structure
 
-- `_config.yml`: site settings, permalinks, and GitHub Pages URL/base path.
+- `_config.yml`: site settings and permalinks.
 - `_layouts/`: page templates.
 - `_includes/`: shared fragments.
 - `_posts/`: Markdown posts.
@@ -12,6 +12,8 @@ DUWEI NIGHTS / 毒味夜 is a minimal Jekyll site for GitHub Pages.
 - `posts/index.html`: archive page.
 - `assets/css/site.css`: global styles.
 - `assets/images/`: images and brand assets.
+- `netlify.toml`: Netlify build settings.
+- `.ruby-version`: Ruby version for local and hosted builds.
 
 ## Preview Locally
 
@@ -41,33 +43,22 @@ git remote add origin git@github.com:YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main
 ```
 
-## Enable GitHub Pages
+## Deploy on Netlify
 
-1. Open the repository on GitHub.
-2. Go to `Settings` -> `Pages`.
-3. Under `Build and deployment`, choose `Deploy from a branch`.
-4. Select the `main` branch and the `/ (root)` folder.
-5. Save and wait for GitHub Pages to build the site.
-
-## Configure `url` and `baseurl`
-
-Edit `_config.yml` before deployment:
-
-- If the repository is your user or organization site, for example `yourname.github.io`:
+1. Connect the GitHub repository to Netlify.
+2. Keep the repository root as the site root.
+3. Netlify will read `netlify.toml` automatically:
+   - build command: `bundle exec jekyll build`
+   - publish directory: `_site`
+4. After the first deploy, note the Netlify site URL.
+5. Put that URL in `_config.yml`:
 
 ```yml
-url: "https://yourname.github.io"
+url: "https://your-site.netlify.app"
 baseurl: ""
 ```
 
-- If the repository is a project site, for example `yourname.github.io/duwei-nights`:
-
-```yml
-url: "https://yourname.github.io"
-baseurl: "/duwei-nights"
-```
-
-The site already uses `relative_url`, so once `baseurl` is correct, internal links and assets will resolve correctly on GitHub Pages.
+The site already uses `relative_url`, so links and assets will work with `baseurl: ""`.
 
 ## Add a New Post
 
