@@ -489,6 +489,9 @@ select {
 }
 
 .site-footer__link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
   text-decoration: none;
 }
 
@@ -498,7 +501,6 @@ select {
   text-decoration-color: rgba(237, 229, 216, 0.36);
 }
 
-.site-footer__separator,
 .site-footer__subtitle {
   color: var(--page-soft);
 }
