@@ -6,7 +6,7 @@ dek: "Tame Impala, Record Store Day, and a break that still catches me sideways.
 
 In 2014, I went to Record Store Day in Ghent.
 
-I remember passing through Chew Music and Mania Records, the record shop on the corner of Lammerstraat. I do not remember exactly what I bought that day, but I remember finding *Live Versions* by Tame Impala for something like eleven or twelve euros.
+I remember passing through Music Mania Records, the record shop on the corner of Lammerstraat. I do not remember exactly what I bought that day, but I remember finding *Live Versions* by Tame Impala for something like eleven or twelve euros.
 
 I was very happy with it.
 
