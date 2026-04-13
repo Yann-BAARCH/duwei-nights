@@ -10,6 +10,10 @@ That feeling matters a lot to me when I discover a band. I am not always attract
 
 Their first album sounded cool right away. It had strong songs, a real personality, and that strange mix of looseness and control that I like. One of my favorite tracks to play when a DUWEI NIGHTS session starts is [“On The Seine”](https://soundcloud.com/sdzrecords/le-villejuif-underground-on-the-seine), also from that album.
 
+<figure>
+  <img src="{{ '/assets/images/villejuif-photo-530x353.jpg' | relative_url }}" alt="Le Villejuif Underground">
+</figure>
+
 <figure class="post-embed">
   <iframe
     title="On The Seine by Le Villejuif Underground"
