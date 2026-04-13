@@ -461,6 +461,18 @@ select {
   margin-top: 0.55rem;
 }
 
+.post-content .post-video {
+  max-width: var(--reading-width);
+}
+
+.post-content .post-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
 .post-content .post-linkout {
   margin-top: 0.9rem;
   color: var(--page-soft);
